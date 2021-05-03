@@ -5,6 +5,26 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Row(
-        children: [Text('About Us'), Text('Projects'), Text('Contact Us')],
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'About',
+            style: TextStyle(fontSize: 24),
+          ),
+          const SizedBox(
+            width: 12,
+          ),
+          Text(
+            'Projects',
+            style: TextStyle(fontSize: 24),
+          ),
+          const SizedBox(
+            width: 12,
+          ),
+          Text(
+            'Contact',
+            style: TextStyle(fontSize: 24),
+          )
+        ],
       );
 }
